@@ -278,7 +278,7 @@ var AirPlane = function() {
     // Create the cabin
     // Cockpit
 
-    var geomCockpit = new THREE.BoxGeometry(60, 50, 50, 1, 1, 1);
+    var geomCockpit = new THREE.BoxGeometry(100, 60, 50, 1, 1, 1);
     var matCockpit = new THREE.MeshPhongMaterial({color: Colors.red, shading: THREE.FlatShading});
     
     // We can access a specific vertex of a shape through
