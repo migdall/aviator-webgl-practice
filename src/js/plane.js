@@ -355,6 +355,24 @@ function createPlane() {
     scene.add(airplane.mesh);
 }
 
+// Render the Pilot
+var Pilot = function() {
+    this.mesh = new THREE.Object3D();
+    this.mesh.name = "pilot";
+    
+    this.angleHairs = 0;
+    
+    // Body of the pilot
+    var bodyGeom = new THREE.BoxGeometry(15, 15, 15);
+    var bodyMat = new THREE.MeshPhongMaterial({color: Colors.brown, shading: THREE.FlatShading});
+    var body = new THREE.Mesh(bodyGeom, bodyMat);
+    body.position.set(2, -12, 0);
+    this.mesh.add(body);
+    
+    
+    
+};
+
 var mousePos = {x: 0, y: 0};
 
 // Now handle the mousemove event
